@@ -1,0 +1,318 @@
+.hero{
+
+    width:100%;
+    min-height:90vh;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:60px 8%;
+
+    background:var(--bg-primary);
+
+}
+
+.hero-left{
+
+    flex:1;
+
+}
+
+.hero-right{
+
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    background:var(--bg-secondary);
+
+    color:var(--accent);
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    margin-bottom:20px;
+
+    border:1px solid var(--border);
+
+}
+
+.hero h1{
+
+    font-size:70px;
+
+    color:var(--text-primary);
+
+}
+.hero h3{
+    color: var(--text-primary);
+}
+
+.hero h2{
+
+    margin-top:20px;
+
+    line-height:1.5;
+
+    color:var(--text-primary);
+
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    width:100%;
+
+    color:var(--text-secondary);
+
+}
+
+.hero-buttons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+.primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    background: var(--accent);
+    color: white;
+
+    border: none;
+
+    padding: 14px 28px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    background: var(--card-bg);
+    color: var(--text-primary);
+
+    border: 1px solid var(--border);
+
+    padding: 14px 28px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.social-icons{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:35px;
+
+    font-size:25px;
+
+    color: var(--text-primary);
+}
+.social-icons a {
+    color: var(--text-primary);
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--accent);
+    transform: translateY(-4px);
+}
+
+.image-circle{
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:var(--bg-secondary);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.image-circle img {
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+    .hero {
+        padding: 50px 6%;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero p {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .image-circle {
+        width: 380px;
+        height: 380px;
+    }
+
+    .image-circle img {
+        width: 320px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        padding: 100px 6% 60px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 50px;
+    }
+
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+        line-height: 1.1;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .image-circle {
+        width: 330px;
+        height: 330px;
+    }
+
+    .image-circle img {
+        width: 280px;
+    }
+}
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 90px 5% 50px;
+        gap: 40px;
+    }
+
+    .badge {
+        font-size: 11px;
+        padding: 7px 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+    .social-icons {
+        gap: 20px;
+        font-size: 22px;
+    }
+
+    .image-circle {
+        width: 270px;
+        height: 270px;
+    }
+
+    .image-circle img {
+        width: 225px;
+    }
+}

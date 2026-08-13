@@ -1,0 +1,49 @@
+:root {
+    --bg-primary: #fdf8f3;
+    --bg-secondary: #ffffff;
+
+    --text-primary: #4b2b1a;
+    --text-secondary: #555555;
+
+    --accent: #6d3f24;
+
+    --card-bg: #ffffff;
+
+    --border: #dddddd;
+}
+
+.dark {
+    --bg-primary: #17120f;
+    --bg-secondary: #241b17;
+
+    --text-primary: #f5e9df;
+    --text-secondary: #c8b9ad;
+
+    --accent: #d29a70;
+
+    --card-bg: #2b211c;
+
+    --border: #493b33;
+}
+
+body,
+.app,
+.navbar,
+.hero,
+.stats,
+.about,
+.projects,
+.experience,
+.achievements,
+.contact,
+.stat-card,
+.tech-card,
+.project-card,
+.timeline-card,
+.achievement-card,
+.contact-card {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
